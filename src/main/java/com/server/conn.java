@@ -81,4 +81,16 @@ public class conn {
             }
         }
     }
+    public static String reu(){
+        String uname = "ahmad";
+        return uname;
+    }
+    public static String rep(){
+        String pass = "MUHHamad12";
+        return pass;
+    }
+    public static String url(){
+        String url = "jdbc:mysql://localhost:3306/clients";
+        return url;
+    }
 }

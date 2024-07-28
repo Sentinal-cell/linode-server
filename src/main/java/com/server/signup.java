@@ -24,9 +24,9 @@ public class signup implements Runnable {
 
     @Override
     public void run() {
-        String url = "jdbc:mysql://localhost:3306/clients";
-        String username = "root";
-        String password = "root";
+        String url = conn.url();
+        String username = conn.reu();
+        String password = conn.rep();
         try {
             logger.info("Starting signup! ");
             DataInputStream dataInputStream = new DataInputStream(client.getInputStream());

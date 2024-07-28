@@ -41,9 +41,9 @@ public class ftran implements Runnable {
 
     @Override
     public void run() {
-        String url = "jdbc:mysql://localhost:3306/clients";
-        String username = "root";
-        String password = "root";
+        String url = conn.url();
+        String username = conn.reu();
+        String password = conn.rep();
         logger.info("session timer started...");
         ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
         scheduler.schedule(() -> {
