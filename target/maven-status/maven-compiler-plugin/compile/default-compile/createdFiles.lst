@@ -1,0 +1,9 @@
+com\server\App.class
+com\server\transfer.class
+com\server\user_information.class
+com\server\alert_check.class
+com\server\ftran.class
+com\server\records.class
+com\server\conn.class
+com\server\encryption.class
+com\server\signup.class
