@@ -133,7 +133,7 @@ public class ftran implements Runnable {
                 String tid = new String(randomString);
                 String amt = Integer.toString(amount);
                 dataOutputStream.writeUTF(mail + "&" + rmail + "&" + status + "&" + amt + "&" + timestamp + "&" + tid);
-                String update_transaction = "INSERT INTO Transactions (tid, Date, Sender, Receiver, Rbank, Amount, rec_conf) VALUES ('"
+                String update_transaction = "INSERT INTO transactions (tid, Date, Sender, Receiver, Rbank, Amount, rec_conf) VALUES ('"
                         + tid + "', '" + timestamp + "', '" + mail + "', '" + rmail + "', '" + rbank + "', " + amount
                         + ", 'false')";
                 logger.info("Updating transactions table");

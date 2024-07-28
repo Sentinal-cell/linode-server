@@ -40,7 +40,7 @@ public class alert_check implements Runnable {
             while (resultSet.next()) {
                 mail = resultSet.getString("mail");
             }
-            String query2 = "SELECT * FROM transactions WHERE receiver='" + mail + "' AND  rec_conf='false'";
+            String query2 = "SELECT * FROM Transactions WHERE receiver='" + mail + "' AND  rec_conf='false'";
             ResultSet resultSet2 = statement.executeQuery(query2);
             if (resultSet2.next()) {
                 dataOutputStream.writeUTF("true");
